@@ -1,0 +1,7 @@
+.page-header__wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 62px;
+  align-items: center;
+  margin: 26px 120px 0;
+}

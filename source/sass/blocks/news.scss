@@ -1,0 +1,19 @@
+.news {
+display: flex;
+justify-content: space-between;
+}
+
+.news__pic-list {
+  display: grid;
+  grid-template-columns: 285px 1fr;
+  gap: 20px;
+}
+
+.news__item {
+  &:last-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}

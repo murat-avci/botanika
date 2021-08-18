@@ -1,0 +1,14 @@
+.main-footer {
+  --width-body:1140;
+  padding: 24px calc((115 / var(--width-body)) * 100%) 41px calc((24 / var(--width-body)) * 100%);
+  outline: 2px solid red;
+  background-color: $content;
+}
+
+.main-footer__wrapper {
+  --width-body:1140;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: calc((103 / var(--width-body)) * 100%);
+  align-items: center;
+}

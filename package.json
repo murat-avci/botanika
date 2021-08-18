@@ -1,32 +1,35 @@
 {
   "name": "botanika-2021",
-  "private": true,
+  "version": "1.0.0",
   "description": "Марафон Заверстаю проект «Botanika» от HTML Academy",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^10.3.1",
+    "autoprefixer": "9.5.x",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",
-    "del": "^6.0.0",
-    "es6-promise": "^4.2.8",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "^9.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "3.0.0",
-    "gulp-svgstore": "^8.0.0",
-    "gulp-terser": "^2.0.1",
+    "eslint": "7.1.0",
+    "eslint-config-htmlacademy": "0.6.0",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-terser": "^2.0.0",
     "gulp-webp": "^4.0.1",
-    "node-sass": "^6.0.1",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.2.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -40,8 +43,8 @@
   },
   "browserslist": [
     "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "IE 11",
+    "Firefox ESR"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -52,12 +55,9 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "14.17.5"
+    "node": "8.15"
   },
   "dependencies": {
-    "html": "^1.0.0",
-    "npx": "^10.2.2",
-    "postcss-cli": "^8.3.1",
-    "del": "^6.0.0"
+    "del": "^4.1.1"
   }
 }
