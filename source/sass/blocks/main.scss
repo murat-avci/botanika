@@ -2,6 +2,10 @@
   margin: 81px 120px 0;
 }
 
+.main__intro {
+  min-height: 463px;
+}
+
 .main__benefits {
   margin-top: 48px;
 }
@@ -31,9 +35,11 @@
   margin-top: 80px;
   padding: 40px 44px 64px;
   text-align: center;
+  border: 1px solid $content;
 }
 
 .main__contacts {
+  position: relative;
   margin-top: 80px;
   width: 100%;
   min-height: 644px;
@@ -41,8 +47,4 @@
   background-image: url("../../img/map@1x.png");
   background-position: 0 0;
   background-size: cover ;
-  padding-top: 52px;
-  padding-right: 57%;
-  padding-left: 19%;
-  padding-bottom: 72px;
 }

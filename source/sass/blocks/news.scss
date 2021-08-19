@@ -1,6 +1,31 @@
 .news {
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: 387px 1fr;
+column-gap: 121px;
+}
+
+.news__watch-wrapper {
+  padding-top: 70px;
+}
+
+.news__watch-title {
+  @include title(36px,48px,700,$content);
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.news__watch-text {
+  @include text(24px,29px,$content);
+  margin-top: 40px;
+
+  & span {
+    white-space: nowrap;
+  }
+}
+
+.news__social {
+  margin-top: 40px;
+  max-width: 97px;
 }
 
 .news__pic-list {

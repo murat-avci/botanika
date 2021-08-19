@@ -3,7 +3,11 @@ $basic-white: #ffffff;
 $basic-black: #000000;
 $bg-color: #f2f3f4;
 $lines: #d7d9df;
-$button: #d88999;
+$button: #d89999;
 $content: #ae7c78;
-$item-focus: rgba(174,124,120,0.6);
+$item-hover: rgba(174,124,120,0.6);
 // $width-body: 1440;
+
+:root{
+  --width-body: 1440;
+}

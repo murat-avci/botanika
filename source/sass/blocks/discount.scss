@@ -1,3 +1,24 @@
 .discount {
   display: flex;
 }
+
+.discount__wrapper {
+  padding: 40px 20px 64px 102px;
+  background-color: $content;
+}
+
+.discount__title {
+  @include title(44px,59px,400,$basic-white);
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 0,02em;
+
+  & span {
+    white-space: nowrap;
+  }
+}
+
+.discount__text {
+  @include text(24px,29px,$basic-white);
+  padding-right: 101px;
+  margin-top: 24px;
+}

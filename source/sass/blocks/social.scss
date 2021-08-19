@@ -1,4 +1,30 @@
+.social {
+  &--footer {
+    display: flex;
+    justify-content: space-between;
+    min-width: 97px;
+  }
+}
+
 .social__list {
   display: flex;
   justify-content: space-between;
+}
+
+.social__link {
+  display: inline-block;
+
+  &--footer {
+  .social__instagram-icon,
+  .social__facebook-icon,
+  .social__twitter-icon {
+      fill: $basic-white;
+    }
+  }
+}
+
+.social__instagram-icon,
+.social__facebook-icon,
+.social__twitter-icon {
+  fill: $button;
 }

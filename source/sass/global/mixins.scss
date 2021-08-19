@@ -1,0 +1,51 @@
+@mixin menu-text ($color) {
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 16px;
+    weight: 400; 
+  };
+  line-height: 20px;
+  color: $color;
+  text-decoration: none;
+}
+
+@mixin intro-title ($color) {
+  font: {
+    family: 'Playfair Display', sans-serif;
+    size: 44px;
+    weight: 400;
+    style: normal; 
+  };
+  line-height: 59px;
+  color: $content;
+}
+
+@mixin text ($size,$height,$color) {
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: $size;
+    weight: 400;
+    style: normal;
+  }
+  line-height: $height;
+  color: $color;
+}
+
+@mixin title ($size,$height,$weight,$color) {
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: $size;
+    weight: $weight;
+    style: normal;
+  }
+  line-height: $height;
+  color: $color;
+}
+
+@mixin button {
+  display: inline-block;
+  padding: 30px 69px 30px 70px;
+  background-color: $button;
+  border-radius: 40px;
+  text-decoration: none;
+}

@@ -16,12 +16,9 @@
   <div class="page__container">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="#" class="page-header__logo">
-          <img src="./img/logo.svg" width="100" height="32" alt="logo botanika">
-        </a>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
-            <ul class="page-header__menu menu">
+            <ul class="main-nav__menu menu">
               <li class="menu__item">
                 <a href="#" class="menu__link">Каталог</a>
               </li>
@@ -30,6 +27,11 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img src="./img/logo.svg" width="100" height="32" alt="logo botanika">
+                </a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Спецпредложения</a>
@@ -50,15 +52,15 @@
         <section class="main__intro intro">
           <h2 class="visually-hidden">Intro</h2>
           <div class="intro__wrapper">
-            <h1 class="intro__title">Авторские букеты в Петербурге</h1>
+            <h1 class="intro__title">Авторские букеты <span>в Петербурге</span></h1>
             <p class="intro__text">Оригинальные свежие букеты с доставкой по всему городу</p>
             <a href="#" class="intro__button">Смотреть каталог</a>
           </div>
-          <figure class="intro__pic">
+          <figure class="intro__pic intro__pic--pic1">
             <img src="./img/tukhfatullina@1x.jpg" width="386" height="404" alt="intro pic1">
           </figure>
-          <figure class="intro__pic">
-            <img src="./img/shestopal@1x.jpg" width="387" height="420" alt="intro pic1">
+          <figure class="intro__pic intro__pic--pic2">
+            <img src="./img/shestopal@1x.jpg" width="387" height="420" alt="intro pic2">
           </figure>     
         </section>
         <section class="main__benefits benefits">
@@ -66,14 +68,23 @@
           <div class="benefits__wrapper">
             <ul class="benefits__list">
               <li class="benefits__item">
+                <svg class="benefits__delivery-icon" width="83" height="52">
+                  <use xlink:href="img/sprite.svg#icon-delivery"></use>  
+                </svg>
                 <h3 class="benefits__title">Быстрая доставка</h3>
                 <p class="benefits__text">Можем собрать букет и передать его в доставку всего за час.</p>
               </li>
               <li class="benefits__item">
+                <svg class="benefits__bouquet-icon" width="52" height="52">
+                  <use xlink:href="img/sprite.svg#icon-bouquet"></use>
+                </svg>
                 <h3 class="benefits__title">Всегда свежие цветы</h3>
                 <p class="benefits__text">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
               </li>
               <li class="benefits__item">
+                <svg class="benefits__camera-icon" width="59" height="52">
+                  <use xlink:href="img/sprite.svg#icon-camera"></use>
+                </svg>
                 <h3 class="benefits__title">Отправляем фото цветов</h3>
                 <p class="benefits__text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
               </li>
@@ -95,8 +106,16 @@
                 <img src="./img/garden-roses@1x.jpg" width="387" height="438" alt="Garden Roses">
               </li>
             </ul>
-            <a href="" class="goods__slider-left"><span>Arrow Left</span></a>
-            <a href="" class="goods__slider-left"><span>Arrow Right</span></a>
+            <div class="goods__slider">
+              <a href="" class="goods__slider-btn"><span class="visually-hidden">Arrow Left</span>
+              <svg class="goods__arrow-left" width="51" height="16">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg></a>
+              <a href="" class="goods__slider-btn"><span class="visually-hidden">Arrow Right</span>
+                <svg class="goods__arrow-right" width="51" height="16">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg></a>
+            </div>
           </div>        
         </section>
         <section class="main__catalog catalog">
@@ -135,7 +154,7 @@
         </section>
         <section class="main__discount discount">
           <div class="discount__wrapper">
-            <h2 class="discount__title">Скидка 10% на первый заказ</h2>
+            <h2 class="discount__title">Скидка 10% <span>на первый заказ</span></h2>
             <p class="discount__text">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
           </div>
           <img src="./img/florist-makes-studio@1x.jpg" width="590" height="391" alt="Флорист делает красивый букет в студии">
@@ -154,7 +173,7 @@
               </li>
               <li class="stages__item">
                 <h3 class="stages__title">Оплата</h3>
-                <p class="stages__text">Оплатить заказ можно онлайн на сайте или при получении</p>
+                <p class="stages__text">Оплатить заказ можно онлайн <span>на сайте или при получении</span></p>
               </li>
               <li class="stages__item">
                 <h3 class="stages__title">Доставка</h3>
@@ -165,24 +184,36 @@
         </section>
         <article class="main__news news">
           <h2 class="visually-hidden">Новости</h2>
-          <div class="news__wrapper">
-            <h3 class="news__title">Следите за нашими новостями</h3>
-            <p class="news__text">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+          <div class="news__watch-wrapper">
+            <h3 class="news__watch-title">Следите за нашими новостями</h3>
+            <p class="news__watch-text">Подписывайтесь на наши соцсети и узнавайте <span>о новинках и акциях первым.</span></p>
             <div class="news__social social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="#" class="social__link"><span>Instagram</span></a>
+                  <a href="#" class="social__link"><span class="visually-hidden">Instagram</span>
+                    <svg class="social__instagram-icon" width="21" height="20">
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__link"><span>Facebook</span></a>
+                  <a href="#" class="social__link"><span class="visually-hidden">Facebook</span>
+                    <svg class="social__facebook-icon" width="12" height="20">
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__link"><span>Twitter</span></a>
+                  <a href="#" class="social__link"><span class="visually-hidden">Twitter</span>
+                    <svg class="social__twitter-icon" width="26" height="20">
+                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="news__inner-wrapper">
+          <div class="news__pic-wrapper">
             <ul class="news__pic-list">
               <li class="news__item">
                 <img src="./img/samantha-gades@1x.jpg" width="285" height="220" alt="Samantha Gades">
@@ -209,7 +240,7 @@
                 <p class="reviews__author">Татьяна</p>
               </li>
               <li class="reviews__item">
-                <p class="reviews__text">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+                <p class="reviews__text">Выбор букетов на любой вкус <span>и цену. Бывают хорошие скидки,</span> <span>а флористы всегда помогут и точно</span> соберут красивый букет!</p>
                 <p class="reviews__author">Ольга</p>
               </li>
             </ul>
@@ -217,26 +248,28 @@
         </article>
       </div>
       <section class="main__contacts contacts">
-        <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <ul class="contacts__card">
-            <li class="contacts__item">
-              <h3 class="contacts__title">Приходите к нам:</h3>
-              <p class="contacts__text">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__title">Режим работы:</h3>
-              <p class="contacts__text">Пн-Вск, с 9-00 до 20-00</p>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__title">Позвоните нам:</h3>
-              <a href="tel:+7(812)9834719" class="contacts__link">+ 7 (812) 983-47-19</a>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__title">Напишите нам:</h3>
-              <a href="mailto:info@botanika.ru" class="contacts__link">info@botanika.ru</a>
-            </li>
-          </ul>
+          <h2 class="contacts__main-title">Мы ждем вас</h2>
+          <div class="contacts__inner-wrapper">
+            <ul class="contacts__card">
+              <li class="contacts__item">
+                <h3 class="contacts__title">Приходите к нам:</h3>
+                <p class="contacts__text">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__title">Режим работы:</h3>
+                <p class="contacts__text">Пн-Вск, с 9-00 до 20-00</p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__title">Позвоните нам:</h3>
+                <a href="tel:+7(812)9834719" class="contacts__link">+ 7 (812) 983-47-19</a>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__title">Напишите нам:</h3>
+                <a href="mailto:info@botanika.ru" class="contacts__link">info@botanika.ru</a>
+              </li>
+            </ul>
+          </div>          
         </div>
       </section>
     </main>
@@ -247,51 +280,50 @@
         </a>
         <ul class="main-footer__menu menu">
           <li class="menu__item">
-            <a href="" class="menu__link">Каталог</a>
+            <a href="" class="menu__link menu__link--footer">Каталог</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Доставка и оплата</a>
+            <a href="" class="menu__link menu__link--footer">Доставка и оплата</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Отзывы</a>
+            <a href="" class="menu__link menu__link--footer">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Спецпредложения</a>
+            <a href="" class="menu__link menu__link--footer">Спецпредложения</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Контакты</a>
+            <a href="" class="menu__link menu__link--footer">Контакты</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link">Корзина</a>
+            <a href="" class="menu__link menu__link--footer">Корзина</a>
           </li>
-          <li class="menu__item social">
-            <ul class="social__list">
+          <li class="menu__item">
+            <ul class="menu__social social social--footer">
               <li class="social__item">
-                <a href="#" class="social__link"><span>Instagram</span></a>
+                <a href="#" class="social__link social__link--footer"><span class="visually-hidden">Instagram</span>
+                  <svg class="social__instagram-icon" width="21" height="20">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link"><span>Facebook</span></a>
+                <a href="#" class="social__link social__link--footer"><span class="visually-hidden">Facebook</span>
+                  <svg class="social__facebook-icon" width="12" height="20">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link"><span>Twitter</span></a>
+                <a href="#" class="social__link social__link--footer"><span class="visually-hidden">Twitter</span>
+                  <svg class="social__twitter-icon" width="26" height="20">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
-      <!-- <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link"><span>Instagram</span></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link"><span>Facebook</span></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link"><span>Twitter</span></a>
-          </li>
-        </ul>
-      </div> -->
     </footer>
   </div>  
 </body>

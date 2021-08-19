@@ -2,3 +2,43 @@
   display: flex;
   justify-content: space-between;
 }
+
+.benefits__item {
+  margin-left: 122px;
+  max-width: 285px;
+
+  &:first-child {
+    margin-left: 102px;
+  }
+}
+
+.benefits__item {
+  position: relative;
+}
+
+.benefits__delivery-icon {
+  position: absolute;
+  top: 0;
+  left: -102px;
+}
+
+.benefits__bouquet-icon {
+  position: absolute;
+  top: 0;
+  left: -72px;
+}
+
+.benefits__camera-icon {
+  position: absolute;
+  top: 0;
+  left: -79px;
+}
+
+.benefits__title {
+  @include title(16px,20px,500,$content);
+}
+
+.benefits__text {
+  @include text(16px,20px,$content);
+  margin-top: 8px;
+}

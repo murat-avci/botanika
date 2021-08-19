@@ -1,8 +1,31 @@
+.stages__main-title {
+  @include title(36px,48px,700,$content);
+  font-family: 'Playfair Display', sans-serif;
+}
+
 .stages__wrapper {
   margin-top: 36px;
 }
 
 .stages__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 20px;
+}
+
+.stages__item {
+  max-width: 285px;
+}
+
+.stages__title {
+  @include title(16px,20px,500,$content);
+}
+
+.stages__text {
+  @include text(16px,20px,$content);
+  margin-top: 8px;
+
+  & span {
+    white-space: nowrap;
+  }
 }

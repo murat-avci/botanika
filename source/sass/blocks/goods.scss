@@ -1,4 +1,77 @@
+
+.goods__card {
+  max-width: 794px;
+  max-height: 438px;
+}
+
 .goods__item {
   display: flex;
   justify-content: space-between;
+}
+
+.goods__title {
+  @include title(36px,48px,700,$content);
+  font-family: 'Playfair Display' sans-serif;
+  text-align: center;
+}
+
+.goods__wrapper {
+  margin-top: 36px;
+}
+
+.goods__inner-wrapper {
+  margin-top: 27px;
+}
+
+.goods__subtitle {
+  @include title(24px,29px,500,$content);
+}
+
+.goods__text {
+  @include text(16px,20px,$content);
+  margin-top: 20px;
+}
+
+.goods__size {
+  @include text(16px,20px,$content);
+  margin-top: 24px;
+}
+
+.goods__price {
+  @include text(24px,29px,$content);
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.goods__button {
+  @include button;
+  @include text(16px,20px,$basic-white);
+  padding: 30px 107px 30px 105px;
+  margin-top: 64px;
+}
+
+.goods__slider {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120px;
+  margin: 0 auto;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.goods__slider-btn {
+  display: inline-block;
+  position: relative;
+}
+
+.goods__arrow-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.goods__arrow-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

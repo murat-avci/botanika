@@ -1,7 +1,24 @@
-.page-header__wrapper {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  column-gap: 62px;
-  align-items: center;
-  margin: 26px 120px 0;
+.page-header {
+  position: relative;
+  padding: 16px calc((120 / var(--width-body)) * 100%) 16px ;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $content;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $content;
+  }
 }

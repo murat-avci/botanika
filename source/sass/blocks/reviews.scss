@@ -1,3 +1,9 @@
+.reviews__main-title {
+  @include title(36px,48px,700,$content);
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 0.02em;
+}
+
 .reviews__wrapper {
   margin-top: 40px;
 }
@@ -5,4 +11,22 @@
 .reviews__card {
   display: flex;
   justify-content: space-between;
+}
+
+.reviews__item {
+  max-width: 300px;
+}
+
+.reviews__text {
+  @include text(16px,20px,$content);
+
+  & span {
+    white-space: nowrap;
+  }
+}
+
+.reviews__author {
+  @include text(16px,20px,$content);
+  font-weight: 500;
+  margin-top: 16px;
 }

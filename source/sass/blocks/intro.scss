@@ -1,4 +1,31 @@
 .intro {
-  display: flex;
+  display: grid;
+  grid-template-columns: 384px repeat(2,1fr);
   justify-content: space-between;
+  column-gap: 20px;
+}
+
+.intro__title {
+  @include intro-title($content);
+
+  & span {
+    font-style: italic;
+  }
+}
+
+.intro__text {
+  @include text(24px,29px,$content);
+  margin-top: 24px;
+}
+
+.intro__button {
+  @include button;
+  @include text(16px,20px,$basic-white);
+  margin-top: 64px;
+}
+
+.intro__pic {
+  &--pic1 {
+    align-self: flex-end;
+  }
 }
