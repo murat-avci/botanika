@@ -48,6 +48,10 @@
   @include text(16px,20px,$basic-white);
   padding: 30px 107px 30px 105px;
   margin-top: 64px;
+
+  &:hover {
+    background-color: rgba($color: $btn-hover, $alpha: 0.5);
+  }
 }
 
 .goods__slider {

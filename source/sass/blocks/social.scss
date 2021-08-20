@@ -21,6 +21,15 @@
       fill: $basic-white;
     }
   }
+
+  &:hover {
+    .social__instagram-icon,
+    .social__facebook-icon,
+    .social__twitter-icon {
+      fill: rgba($color: brown, $alpha: 1.0);
+      }
+
+  }
 }
 
 .social__instagram-icon,

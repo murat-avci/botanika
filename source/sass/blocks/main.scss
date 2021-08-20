@@ -44,7 +44,11 @@
   width: 100%;
   min-height: 644px;
   height: 100%;
-  background-image: url("../../img/map@1x.png");
+  background-image: url("../img/map@1x.png");
   background-position: 0 0;
   background-size: cover ;
+
+  @include retina {
+    background-image: url("../img/map@2x.png");
+  }
 }

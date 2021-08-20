@@ -1,4 +1,11 @@
 .page {
   max-width: 1440px;
-  margin: 26px auto 0;
+  margin: 0 auto;
+  background-color: $back-body;
+  height: 100%;
+}
+
+.page__container {
+  background-color: $basic-white;
+  padding-top: 26px;
 }

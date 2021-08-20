@@ -22,6 +22,10 @@
   @include button;
   @include text(16px,20px,$basic-white);
   margin-top: 64px;
+
+  &:hover {
+    background-color: rgba($color: $btn-hover, $alpha: 0.5);
+  }
 }
 
 .intro__pic {

@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/styles.min.css">
-  <link rel="preload" href="fonts/montserrat-v18-cyrillic-regular.woff2" as="font">
-  <link rel="preload" href="fonts/playfair-display-v22-cyrillic-regular.woff2" as="font">
-  <link rel="preload" href="fonts/montserrat-v18-cyrillic-500.woff2" as="font">
-  <link rel="preload" href="fonts/playfair-display-v22-cyrillic-700.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-regular.woff2" as="font" crossOrigin="anonymous">
+  <link rel="preload" href="fonts/playfair-display-v22-cyrillic-regular.woff2" as="font" crossOrigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v18-cyrillic-500.woff2" as="font" crossOrigin="anonymous">
+  <link rel="preload" href="fonts/playfair-display-v22-cyrillic-700.woff2" as="font" crossOrigin="anonymous">
 </head>
 <body class="page__body">
   <div class="page__container">
@@ -57,10 +57,16 @@
             <a href="#" class="intro__button">Смотреть каталог</a>
           </div>
           <figure class="intro__pic intro__pic--pic1">
-            <img src="./img/tukhfatullina@1x.jpg" width="386" height="404" alt="intro pic1">
+            <picture>
+              <source type="image/webp" srcset="./img/tukhfatullina@1x.webp 1x, ./img/tukhfatullina@2x.webp 2x">
+              <img src="./img/tukhfatullina@1x.jpg" srcset="./img/tukhfatullina@2x.jpg 2x" width="386" height="404" alt="intro pic1">
+          </picture>
           </figure>
           <figure class="intro__pic intro__pic--pic2">
-            <img src="./img/shestopal@1x.jpg" width="387" height="420" alt="intro pic2">
+            <picture>
+              <source type="image/webp" srcset="./img/shestopal@1x.webp 1x, ./img/shestopal@2x.webp 2x">
+              <img src="./img/shestopal@1x.jpg" srcset="./img/shestopal@2x.jpg 2x" width="387" height="420" alt="intro pic2">
+            </picture>            
           </figure>     
         </section>
         <section class="main__benefits benefits">
@@ -103,7 +109,11 @@
                   <p class="goods__price">3600 руб.</p>
                   <a href="" class="goods__button">Заказать</a>
                 </div>
-                <img src="./img/garden-roses@1x.jpg" width="387" height="438" alt="Garden Roses">
+                <picture>
+                  <source type="image/webp" srcset="./img/garden-roses@1x.webp 1x, ./img/garden-roses@2x.webp 2x">
+                  <img src="./img/garden-roses@1x.jpg" srcset="./img/garden-roses@2x.jpg 2x" width="387" height="438" alt="Garden Roses">
+                </picture>
+                
               </li>
             </ul>
             <div class="goods__slider">
@@ -124,7 +134,10 @@
             <ul class="catalog__card">
               <li class="catalog__item">
                 <a href="" class="catalog__link">
-                  <img src="./img/wedding-bouquet@1x.jpg" width="387" height="442" alt="Свадебный букет">
+                  <picture>
+                    <source type="image/webp" srcset="./img/wedding-bouquet@1x.webp 1x, ./img/wedding-bouquet@2x.webp 2x">
+                    <img src="./img/wedding-bouquet@1x.jpg" srcset="./img/wedding-bouquet@2x.jpg 2x" width="387" height="442" alt="Свадебный букет">
+                  </picture>                  
                 </a>
                 <div class="catalog__hover-wrap">
                   <h3 class="catalog__title">Свадебные букеты</h3>
@@ -133,7 +146,10 @@
               </li>
               <li class="catalog__item">
                 <a href="" class="catalog__link">
-                  <img src="./img/peony-flowers-vase@1x.jpg" width="387" height="442" alt="Пион цветы на вазе">
+                  <picture>
+                    <source type="image/webp" srcset="./img/peony-flowers-vase@1x.webp 1x, ./img/peony-flowers-vase@2x.webp 2x">
+                    <img src="./img/peony-flowers-vase@1x.jpg" srcset="./img/peony-flowers-vase@2x.jpg 2x" width="387" height="442" alt="Пион цветы на вазе">
+                  </picture>                  
                 </a>
                 <div class="catalog__hover-wrap">
                   <h3 class="catalog__title">Букеты с пионами</h3>
@@ -142,7 +158,10 @@
               </li>
               <li class="catalog__item">
                 <a href="" class="catalog__link">
-                  <img src="./img/alyssa-strohmann@1x.jpg" width="387" height="442" alt="Выбрать букеты">
+                  <picture>
+                    <source type="image/webp" srcset="./img/alyssa-strohmann@1x.webp 1x, ./img/alyssa-strohmann@2x.webp 2x">
+                    <img src="./img/alyssa-strohmann@1x.jpg" srcset="./img/alyssa-strohmann@2x.jpg 2x" width="387" height="442" alt="Выбрать букеты">
+                  </picture>                  
                 </a>
                 <div class="catalog__hover-wrap">
                   <h3 class="catalog__title">Выбрать букет</h3>
@@ -157,7 +176,10 @@
             <h2 class="discount__title">Скидка 10% <span>на первый заказ</span></h2>
             <p class="discount__text">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
           </div>
-          <img src="./img/florist-makes-studio@1x.jpg" width="590" height="391" alt="Флорист делает красивый букет в студии">
+          <picture>
+            <source type="image/webp" srcset="./img/florist-makes-studio@1x.webp 1x, ./img/florist-makes-studio@2x.webp 2x">
+            <img src="./img/florist-makes-studio@1x.jpg" srcset="./img/florist-makes-studio@1x.jpg 2x" width="590" height="391" alt="Флорист делает красивый букет в студии">
+          </picture>          
         </section>
         <section class="main__stages stages">
           <h2 class="stages__main-title">4 шага к идеальному букету</h2>
@@ -216,13 +238,22 @@
           <div class="news__pic-wrapper">
             <ul class="news__pic-list">
               <li class="news__item">
-                <img src="./img/samantha-gades@1x.jpg" width="285" height="220" alt="Samantha Gades">
+                <picture>
+                  <source type="image/webp" srcset="./img/samantha-gades@1x.webp 1x, ./img/samantha-gades@2x.webp 2x">
+                  <img src="./img/samantha-gades@1x.jpg" srcset="./img/samantha-gades@2x.jpg 2x" width="285" height="220" alt="Samantha Gades">
+                </picture>                
               </li>
               <li class="news__item">
-                <img src="./img/insung-yoon@1x.jpg" width="285" height="220" alt="Insung Yoon">
+                <picture>
+                  <source type="image/webp" srcset="./img/insung-yoon@1x.webp 1x, ./img/insung-yoon@2x.webp 2x">
+                  <img src="./img/insung-yoon@1x.jpg" srcset="./img/insung-yoon@2x.jpg 2x" width="285" height="220" alt="Insung Yoon">
+                </picture>                
               </li>
               <li class="news__item">
-                <img src="./img/demi-he@1x.jpg" width="387" height="460" alt="Demi He">
+                <picture>
+                  <source type="image/webp" srcset="./img/demi-he@1x.webp 1x, ./img/demi-he@2x.webp 2x">
+                  <img src="./img/demi-he@1x.jpg" srcset="./img/demi-he@2x.jpg 2x" width="387" height="460" alt="Demi He">
+                </picture>                
               </li>
             </ul>
           </div>
